@@ -1,0 +1,516 @@
+@charset "UTF-8";
+/*初期設定*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, figcaption, figure,
+footer, header, hgroup, menu, nav, section,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+img{
+vertical-align: top;
+margin:0;
+padding:0;
+height: auto;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+a:hover {
+opacity: 0.6 ;
+}
+li{
+list-style: none;
+}
+body{
+font-family: "Noto Serif JP", serif;
+font-style: normal;
+}
+
+/*共通*/
+p{
+font-size: .9rem;
+color: #000;
+font-weight: lighter;
+}
+h1{
+font-family: "Marcellus", serif;
+font-weight: 400;
+font-size: 1.7rem;
+text-align: center;
+letter-spacing: 0.2em;
+padding-top: 20px;
+color: #000;
+}
+h2{
+font-family: 'EB Garamond';
+font-size: 2.4rem;
+font-weight: bold;
+}
+h3{
+font-size: 1.5rem;
+font-weight: 600;
+padding: 5px 0 20px;
+}
+.l-inner{
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/*メインビジュアル*/
+#section01 .title__text{
+font-family: 'Marcellus';
+font-size: 3.4rem;
+letter-spacing: 0.2em;
+}
+#section01 .subtitle__text{
+font-size: 1.3rem;
+letter-spacing: 0.5em;
+padding-top: 10px;
+font-weight: 400;
+}
+.main__visual{
+background-image: url(../image/mainVIsual_pc.jpg) ;
+background-repeat: no-repeat;
+background-position: center;
+height: 720px;
+background-size: cover;
+}
+#section01 .__block-01{
+margin-top: -445px;
+height: 445px;
+padding-left: 130px;
+}
+
+/*キラメキクリーム*/
+.catch__area{
+padding: 40px 0;
+}
+.catch__area .l-inner{
+max-width: 1000px;
+background-color: #F0F4FF;
+margin: 0 auto;
+}
+.catch__area .__block-01{
+display: flex;
+justify-content: space-between;
+padding: 40px 30px;
+gap: 20px;
+align-items: center;
+}
+.catch__area .goods__name{
+font-size: 1.5rem;
+letter-spacing: 0.2em;
+padding-bottom: 5px;
+}
+.catch__area .price{
+font-size: 1.0rem;
+letter-spacing: 0.2em;
+}
+.catch__area .btn--radius{
+border-radius: 100vh;
+padding: 15px 20px;
+width: 250px;
+text-align: center;
+font-size: 1.1rem;
+}
+.catch__area .btn--blue{
+background-color: #46C4DB;
+color: #fff;
+}
+.catch__area .btn--green{
+background-color: #5DD5AB;
+color: #fff;
+}
+
+/*section02*/
+#section02 .product__visual{
+background-image: url(../image/pmv_pc.jpg) ;
+background-repeat: no-repeat;
+background-position: center;
+height: 550px;
+background-size: cover;
+}
+#section02 .l-inner{
+padding: 40px 0;
+}
+#section02 .__box{
+width: 445px;
+margin: 60px 90px 0 auto;
+}
+#section02 h2,#section02 h3,#section02 p{
+color: #fff;
+}
+#section02 p{
+line-height: 2.5rem;
+}
+
+/*section03*/
+#section03 .l-inner{
+padding: 40px 0;
+}
+#section03 h2,#section03 h3,#section03 p{
+text-align: center;
+}
+#section03 h2{
+font-size: 2.5rem;
+letter-spacing: 0.1em;
+}
+#section03 h3{
+font-size: 1.0rem;
+letter-spacing: 0.1em;
+}
+#section03 .__box{
+background-color: #DBF7F9;
+padding: 35px;
+}
+#section03 img{
+margin: 0 auto;
+}
+#section03 .name{
+padding: 10px 0;
+}
+#section03 .voices__text{
+font-size: 1.0rem;
+line-height: 1.8rem;
+text-align: left;
+}
+/*すらいだー*/
+.sliderArea {
+max-width: 100%;
+margin: 0 auto;
+padding: 0 25px;
+}
+.sliderArea.w300 {
+max-width: 300px;
+}
+.slick-slide {
+margin: 0 15px;
+}
+.slick-prev, .slick-next {
+z-index: 1;
+}
+.slick-slide {
+transition: all ease-in-out .3s;
+opacity: .2;
+}
+.slick-active {
+opacity: 1;
+}
+.slick-current {
+opacity: 1;
+}
+.thumb {
+margin: 20px 0 0;
+}
+.thumb .slick-slide:hover {
+opacity: .7;
+}
+.slick-arrow:before{
+content:""!important;
+width: 100%!important;
+height: 100%!important;
+position: absolute;
+top: 0;
+left: 0;
+}
+.slick-next:before{
+background: url(../../assets/image/arrowRight.svg)!important;
+background-size: contain!important;
+}
+.slick-prev:before{
+background: url(../../assets/image/arrowLeft.svg)!important;
+background-size: contain!important;
+}
+.slick-arrow{
+z-index:2!important;
+width:48px!important;
+height:48px!important;
+}
+.slick-next{
+right:-50px!important;
+}
+.slick-prev{
+left:-50px!important;
+}
+
+
+/*section04*/
+#section04 {
+background: linear-gradient(90deg, #F4FFE8, #C6F0FE);
+}
+#section04 .l-inner{
+padding: 40px 0;
+}
+#section04 h2,#section04 h3{
+text-align: center;
+}
+#section04 h2{
+font-size: 2.3rem;
+letter-spacing: 0.1em;
+}
+#section04  h3{
+font-size: 1.0rem;
+padding-top: 10px;
+letter-spacing: 0.1em;
+}
+#section04 .q__box{
+display: flex;
+padding: 20px;
+}
+#section04 .a__box{
+display: flex;
+padding: 0 20px 20px;
+}
+#section04 .faq__text{
+font-family: 'EB Garamond';
+font-size: 1.0rem;
+padding-right: 15px;
+}
+#section04 .__block-01{
+max-width: 600px;
+margin: 0 auto;
+}
+#section04 .__box{
+background-color: #fff;
+margin-bottom: 20px;
+}
+#section04 p{
+color: #444;
+font-size: .9rem;
+letter-spacing: 0.05em;
+}
+/* 三角形アイコン */
+summary::after {
+content: '';
+display: inline-block;
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 5px solid #000;
+margin-left: auto;
+transition: transform 0.3s ease-in-out;
+margin-top: 8px;
+}
+details[open] summary::after {
+transform: rotate(180deg);
+}
+/*トップへ*/
+footer .wrapper{
+position: relative;
+}
+footer .pagetop{
+width: 40px;
+height: 40px;
+position: absolute;
+right: 0;
+bottom: 0;
+background: #0071CE;
+}
+.dli-arrow-up {
+display: inline-block;
+vertical-align: middle;
+line-height: 1;
+position: relative;
+width: 0.2em;
+height: 1.5em;
+background: currentColor;
+margin: 13px 0 0 19px;
+}
+.dli-arrow-up::before {
+content: '';
+width: 1em;
+height: 1em;
+border: 0.2em solid currentColor;
+border-left: 0;
+border-bottom: 0;
+transform: rotate(-45deg);
+transform-origin: top right;
+position: absolute;
+top: -0.05em;
+right: 50%;
+box-sizing: border-box;
+}
+
+/*フッター*/
+footer{
+padding-top: 5px;
+}
+footer .footer__area{
+background-color: #0071CE;
+}
+footer p,footer a{
+color: #fff;
+}
+footer a{
+font-size: .9rem;
+}
+footer .Copyright{
+font-family: "Noto Serif JP", serif;;
+font-size: .7rem;
+}
+footer .__block-01{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+}
+footer .brand__name{
+font-family: 'Marcellus';
+font-size: 1.7rem;
+letter-spacing: 0.5rem;
+}
+footer .__box{
+display: flex;
+gap: 30px;
+}
+
+
+/*sp
+----------------------*/
+@media screen and (max-width:767px) {
+/*共通*/
+h1{
+font-size: 1.2rem;
+}
+h2{
+font-size: 1.5rem;
+text-align: center;
+}
+h3{
+text-align: center;
+}
+.l-inner{
+max-width: 100%;
+}
+img{
+width: 100%;
+}
+/*メインビジュアル*/
+#section01 .title__text{
+font-size: 2.0rem;
+}
+#section01 .subtitle__text{
+font-size: 1.0rem;
+}
+#section01 .main__visual{
+background-image: url(../image/mainVIsual_sp.jpg) ;
+background-size: cover;
+height: auto;
+aspect-ratio: 13 / 15;
+background-position: top;
+}
+#section01 .__block-01{
+margin-top: -25px;
+height: auto;
+padding-left: 16px;
+}
+
+/*キラメキクリーム*/
+.catch__area .l-inner{
+margin: 0 16px;
+}
+.catch__area .__block-01{
+flex-direction: column;
+padding: 20px;
+}
+.catch__area .goods__name{
+font-size: .9rem;
+text-align: center;
+}
+.catch__area .price{
+font-size: .7rem;
+text-align: center;
+}
+.catch__area .btn--radius{
+width: 80%;
+max-width: 300px;
+}
+
+/*section02*/
+#section02 .product__visual{
+background-image: url(../image/pmv_sp.jpg) ;
+background-size: cover;
+height: auto;
+aspect-ratio: 39 / 68;
+}
+#section02 .l-inner{
+padding: 40px 16px;
+}
+#section02 .__box{
+width: 100%;
+margin: 0 auto;
+}
+#section02 p{
+line-height: 1.8rem;
+}
+
+/*section03*/
+#section03 .l-inner{
+padding: 40px 16px;
+}
+#section03 h2{
+font-size: 1.5rem;
+}
+#section03 h3{
+font-size: .8rem;
+}
+#section03 .__box{
+padding: 30px 10px;
+}
+#section03 img{
+width: 80px;
+}
+#section03 .voices__text{
+text-align: left;
+}
+
+/*section04*/
+#section04 .l-inner{
+padding: 40px 16px;
+}
+#section04 h2{
+font-size: 1.5rem;
+}
+#section04 h3{
+font-size: .8rem;
+}
+#section04 p{
+font-size: .8rem;
+}
+
+/*トップへ*/
+footer{
+padding-top: 10px;
+}
+
+/*フッター*/
+footer a{
+font-size: .6rem;
+}
+footer .Copyright{
+font-size: .5rem;
+}
+footer .__block-01{
+flex-direction: column;
+gap: 20px;
+}
+footer .brand__name{
+font-size: 1.2rem;
+}
+}
