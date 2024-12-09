@@ -191,7 +191,7 @@ text-align: left;
 }
 /*すらいだ-*/
 .sliderArea {
-width: 90%;
+width: 88%;
 margin: 0 auto;
 padding: 0 25px;
 }
@@ -420,7 +420,11 @@ display: flex;
 gap: 30px;
 }
 
-
+@media screen and (max-width:1000px) {
+.sliderArea {
+width: 78%;
+}
+}
 /*sp
 ----------------------*/
 @media screen and (max-width:767px) {
