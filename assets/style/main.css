@@ -56,12 +56,12 @@ letter-spacing: 0.2em;
 padding-top: 20px;
 color: #000;
 }
-h2{
+.large__title{
 font-family: 'EB Garamond';
 font-size: 2.4rem;
 font-weight: bold;
 }
-h3{
+.small__title{
 font-size: 1.5rem;
 font-weight: 600;
 padding: 5px 0 20px;
@@ -152,7 +152,7 @@ padding: 40px 0;
 width: 445px;
 margin: 60px 90px 0 auto;
 }
-#section02 h2,#section02 h3,#section02 p{
+#section02 h2,#section02 p{
 color: #fff;
 }
 #section02 p{
@@ -163,14 +163,14 @@ line-height: 2.5rem;
 #section03 .l-inner{
 padding: 40px 0;
 }
-#section03 h2,#section03 h3,#section03 p{
+#section03 h2,#section03 p{
 text-align: center;
 }
-#section03 h2{
+#section03 .large__title{
 font-size: 2.5rem;
 letter-spacing: 0.1em;
 }
-#section03 h3{
+#section03 .small__title{
 font-size: 1.0rem;
 letter-spacing: 0.1em;
 }
@@ -189,9 +189,9 @@ font-size: 1.0rem;
 line-height: 1.8rem;
 text-align: left;
 }
-/*すらいだー*/
+/*すらいだ-*/
 .sliderArea {
-max-width: 100%;
+width: 90%;
 margin: 0 auto;
 padding: 0 25px;
 }
@@ -248,6 +248,46 @@ right:-50px!important;
 left:-50px!important;
 }
 
+/* ドットの基本スタイル */
+.slick-dots {
+position: absolute;
+bottom: 10px; /* ドットの位置調整 */
+left: 50%;
+transform: translateX(-50%);
+list-style: none;
+padding: 0;
+margin: -40px 0;
+display: flex;
+justify-content: center;
+}
+
+.slick-dots li {
+margin: 0 5px; /* ドット間のスペース */
+}
+
+.slick-dots button {
+background-color: #EEE; /* ドットの色 */
+border: none;
+border-radius: 50%; /* 丸い形にする */
+width: 5px; /* ドットのサイズ */
+height: 5px;
+padding: 0;
+cursor: pointer;
+outline: none;
+transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+opacity: .75;
+color: #00AFBF;
+width: 5px;
+height: 5px;;
+}
+
+.slick-dots li button:before{
+font-size: 10px;
+}
+
 
 /*section04*/
 #section04 {
@@ -256,14 +296,14 @@ background: linear-gradient(90deg, #F4FFE8, #C6F0FE);
 #section04 .l-inner{
 padding: 40px 0;
 }
-#section04 h2,#section04 h3{
+#section04 h2{
 text-align: center;
 }
-#section04 h2{
+#section04 .large__title{
 font-size: 2.3rem;
 letter-spacing: 0.1em;
 }
-#section04  h3{
+#section04  .small__title{
 font-size: 1.0rem;
 padding-top: 10px;
 letter-spacing: 0.1em;
@@ -300,9 +340,9 @@ content: '';
 display: inline-block;
 width: 0;
 height: 0;
-border-left: 5px solid transparent;
-border-right: 5px solid transparent;
-border-top: 5px solid #000;
+border-left: 4px solid transparent;
+border-right: 4px solid transparent;
+border-top: 4px solid #000;
 margin-left: auto;
 transition: transform 0.3s ease-in-out;
 margin-top: 8px;
@@ -388,11 +428,11 @@ gap: 30px;
 h1{
 font-size: 1.2rem;
 }
-h2{
+.large__title{
 font-size: 1.5rem;
 text-align: center;
 }
-h3{
+.small__title{
 text-align: center;
 }
 .l-inner{
@@ -446,8 +486,8 @@ max-width: 300px;
 #section02 .product__visual{
 background-image: url(../image/pmv_sp.jpg) ;
 background-size: cover;
-height: auto;
-aspect-ratio: 39 / 68;
+height: 680px;
+background-position: center;
 }
 #section02 .l-inner{
 padding: 40px 16px;
@@ -464,10 +504,10 @@ line-height: 1.8rem;
 #section03 .l-inner{
 padding: 40px 16px;
 }
-#section03 h2{
+#section03 .large__title{
 font-size: 1.5rem;
 }
-#section03 h3{
+#section03 .small__title{
 font-size: .8rem;
 }
 #section03 .__box{
@@ -480,14 +520,18 @@ width: 80px;
 text-align: left;
 }
 
+.sliderArea {
+width: 70%;
+}
+
 /*section04*/
 #section04 .l-inner{
 padding: 40px 16px;
 }
-#section04 h2{
+#section04 .large__title{
 font-size: 1.5rem;
 }
-#section04 h3{
+#section04 .small__title{
 font-size: .8rem;
 }
 #section04 p{

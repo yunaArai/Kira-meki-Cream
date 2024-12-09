@@ -10,17 +10,15 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://example.com">
 <meta property="og:site_name" content="Kira-meki">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 <script src="/assets/script/slidar.js"></script>
 <link rel="stylesheet" href="/assets/style/main.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="l-main p-index-page">
@@ -58,8 +56,8 @@
                     <div class="l-inner">
                         <div class="__block-01">
                             <div class="__box">
-                                <h2>Keep Your Skin Beautiful.</h2>
-                                <h3>お肌を美しく保つ</h3>
+                                <h2 class="large__title">Keep Your Skin Beautiful.</h2>
+                                <h2 class="small__title">お肌を美しく保つ</h2>
                                 <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
                             </div>
                         </div>
@@ -68,10 +66,10 @@
             </section>
             <section id="section03">
                 <div class="l-inner">
-                    <h2>Voices</h2>
-                    <h3>お客様の声</h3>
+                    <h2 class="large__title">Voices</h2>
+                    <h2 class="small__title">お客様の声</h2>
                     <div class="__block-01 sliderArea">
-                        <div class="regular_3 slider">
+                        <div class="slider">
                             <div class="__box">
                                 <img src="/assets/image/img_a.png" alt="">
                                 <p class="name">Aさん</p>
@@ -108,8 +106,8 @@
             </section>
             <section id="section04">
                 <div class="l-inner">
-                    <h2>Q&amp;A</h2>
-                    <h3>よくあるご質問</h3>
+                    <h2 class="large__title">Q&amp;A</h2>
+                    <h2 class="small__title">よくあるご質問</h2>
                     <div class="__block-01">
                         <details class="__box">
                             <summary class="q__box">
@@ -189,5 +187,28 @@
             </div>
         </div>
     </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+</script>
 </body>
 </html>
