@@ -264,9 +264,6 @@ opacity:unset;
 .slick-dots li{
 margin: 0 -1px;
 }
-.slick-next, .slick-prev{
-display: none !important;
-}
 
 
 /*section04*/
